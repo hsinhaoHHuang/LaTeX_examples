@@ -2,6 +2,7 @@
 \documentclass[12pt, a4paper]{article} % declares the document type, class
 
 \usepackage{graphicx}
+\graphicspath{ {images/} }                                 %configuring the graphicx package
 
 \title{My first LaTeX document}                            % the document title
 \author{Hsinhao Huang\thanks{hsinaohuang@gmail.com}}       % here you write the name of the author(s)
@@ -26,5 +27,7 @@
 
     \textbf{Some of the greatest \emph{discoveries}
     in science were made by accident.}
+
+    \includegraphics{fig_test}                             % insert a figure
 
 \end{document}
