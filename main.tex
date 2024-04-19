@@ -28,6 +28,17 @@
     \textbf{Some of the greatest \emph{discoveries}
     in science were made by accident.}
 
-    \includegraphics{fig_test}                             % insert a figure
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.75\textwidth]{fig_test}   % set the figure’s width to 75% of the text width
+        \caption
+        {
+            A nice plot.
+        }
+        \label{fig:test}
+    \end{figure}
+
+    As you can see in figure \ref{fig:test}, the function grows near the origin.
+    This example is on page \pageref{fig:test}.
 
 \end{document}
