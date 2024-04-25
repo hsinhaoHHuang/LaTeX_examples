@@ -100,7 +100,10 @@
         \end{tabular}
     \end{center}
 
-    \begin{center}
+    Table \ref{table:data} shows how to add a table caption and reference a table.
+
+    \begin{table}[h!]
+        \centering
         \begin{tabular}{||c|c|c|c||}             % to add vertical rules, between columns, use the vertical line parameter |
             \hline                               % to add horizontal rules, above and below rows, use the \hline command
             Col1 & Col2 & Col2 & Col3 \\ [0.5ex]
@@ -116,7 +119,9 @@
             5 & 88 & 788 & 6344 \\ [1ex]
             \hline
         \end{tabular}
-    \end{center}
+        \caption{Table to test captions and labels.}
+        \label{table:data}
+    \end{table}
 
     \section{section}
         \subsection{subsection}
