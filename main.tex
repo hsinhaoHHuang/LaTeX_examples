@@ -1,6 +1,7 @@
 
 \documentclass[12pt, a4paper]{article} % declares the document type, class
 
+\usepackage{CJK}                                           % for Chinese
 \usepackage{graphicx}
 \graphicspath{ {images/} }                                 %configuring the graphicx package
 \usepackage[dvipsnames]{xcolor}
@@ -186,6 +187,11 @@
             \item \textcolor{mypink3}{Pink with cmyk}
             \item \textcolor{mygray}{Gray with gray}
         \end{enumerate}
+
+    \section{Chinese}
+        \begin{CJK*}{UTF8}{bkai}
+            這是一句話。
+        \end{CJK*}
 
     \section{section}
         \subsection{subsection}
