@@ -7,12 +7,16 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{amsmath}                                       % Advanced maths commands
 \usepackage{amssymb}                                       % Extra maths symbols
+\usepackage{array}
 %\usepackage[ total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot ]{geometry}
 
 \definecolor{mypink1}{rgb}{0.858, 0.188, 0.478}
 \definecolor{mypink2}{RGB}{219, 48, 122}
 \definecolor{mypink3}{cmyk}{0, 0.7808, 0.4429, 0.1412}
 \definecolor{mygray}{gray}{0.6}
+
+
+\newcommand{\vect}[1]         {\boldsymbol{#1}}
 
 \title{My first LaTeX document}                            % the document title
 \author{Hsinhao Huang\thanks{hsinaohuang@gmail.com}}       % here you write the name of the author(s)
@@ -152,6 +156,17 @@
                 y_1 &= x^2+y^2\\
                     &= a+b+c+d,
             \end{aligned}
+        \end{equation}
+
+        Arrays of equations:
+        \begin{equation}
+            \left\{
+            \label{eq:arrayequations}
+                \begin{array}{lr}
+                y_1(\vect{x})=y_{0}+\sin(\vect{x})\\
+                y_2(\vect{x})=y_{0}+\cos(\vect{x}),
+                \end{array}
+            \right.
         \end{equation}
 
     \section{Tables}
