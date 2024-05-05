@@ -5,6 +5,8 @@
 \usepackage{graphicx}
 \graphicspath{ {images/} }                                 %configuring the graphicx package
 \usepackage[dvipsnames]{xcolor}
+\usepackage{amsmath}                                       % Advanced maths commands
+\usepackage{amssymb}                                       % Extra maths symbols
 %\usepackage[ total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot ]{geometry}
 
 \definecolor{mypink1}{rgb}{0.858, 0.188, 0.478}
@@ -142,6 +144,15 @@
         Lower case Greek letters are written as $\omega$ $\delta$ etc. while upper case Greek letters are written as $\Omega$ $\Delta$.
 
         Mathematical operators are prefixed with a backslash as $\sin(\beta)$, $\cos(\alpha)$, $\log(x)$ etc.
+
+        Aligned equation:
+        \begin{equation}
+            \begin{aligned}
+            \label{eq:alignedexample}
+                y_1 &= x^2+y^2\\
+                    &= a+b+c+d,
+            \end{aligned}
+        \end{equation}
 
     \section{Tables}
         \begin{center}
